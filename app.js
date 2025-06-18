@@ -62,11 +62,13 @@ div.appendChild(divs);
 
 
 const btnEnviar = document.querySelector(".btn");
-const contendt = document.querySelector(".contenedor");
+const content = document.querySelector(".contenedor");
 
 btnEnviar.addEventListener("click", function(){
     //console.log("hiciste click");
     const valor = prompt("ingrese nombre");
-    const parrafo  = document.cre
+    const parrafo  = document.createElement("p")
+    parrafo.textContent = valor;
+    content.appendChild(parrafo)
 } );
 
