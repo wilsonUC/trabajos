@@ -39,10 +39,10 @@ class Moto extends Vehiculo{
     function mostrarInfo(){
         echo "la marca es " . 
         $this->getMarca() . 
-        "<br>" . "El color es " .
-          $this->color . "<br>" .
+        "\n" . "El color es " .
+          $this->color . "\n" .
            "La Matricula es " .
-            $this->getMatricula() . "<br>";
+            $this->getMatricula() . "\n";
     }
 }
 
